@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+       table{
+        border-collapse: collapse;
+        border-width: 2px;
+        text-align: center;
+        font-size:larger;
+        
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Central University Of Tamilnadu</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Specialization</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>521</td>
+                <td>Stalin</td>
+                <td>Web Designer</td>
+                <td>24</td>
+                <td>Kochi</td>
+            </tr>
+            <tr>
+                <td>527</td>
+                <td>Chhavi</td>
+                <td>Kuch Kam Nhi</td>
+                <td>23</td>
+                <td>Thiruvarur</td>
+            </tr>
+            <tr>
+                <td>553</td>
+                <td>Kaustubh</td>
+                <td>Fron-End Developer</td>
+                <td>24</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>559</td>
+                <td>Ruchita</td>
+                <td>App Dev</td>
+                <td>23</td>
+                <td>Secunderabad</td>
+            </tr>
+            <tr>
+                <td>601</td>
+                <td>Vishwa</td>
+                <td>Professor</td>
+                <td>24</td>
+                <td>Madurai</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>
+            <th>Roll No</th>
+                <th>Name</th>
+                <th>Specialization</th>
+                <th>Age</th>
+                <th>Address</th>
+        </tfoot> -->
+    </table>
+    <hr>
+
+    <h1>Employee Details</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>EMP- Id</th>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Pan No</th>
+                    <th>Phone No</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Stalin</td>
+                    <td>Web Designer</td>
+                    <td>1ABC78N9</td>
+                    <td>9860563395</td>
+                    <td>Kochi</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Chhavi</td>
+                    <td>Kuch Kam Nhi</td>
+                    <td>1CDI78N9</td>
+                    <td>8149923597</td>
+                    <td>Thiruvarur</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Kaustubh</td>
+                    <td>Fron-End Developer</td>
+                    <td>KK5C78N9</td>
+                    <td>7887423597</td>
+                    <td>Pune</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Ruchita</td>
+                    <td>App Dev</td>
+                    <td>1ABCG8N9</td>
+                    <td>7507078931</td>
+                    <td>Secunderabad</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Vishwa</td>
+                    <td>Professor</td>
+                    <td>VBCT78N9</td>
+                    <td>7083348631</td>
+                    <td>Madurai</td>
+                </tr>
+            </tbody>
+            <!-- <tfoot>
+                <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Age</th>
+                    <th>Address</th>
+            </tfoot> -->
+        </table>
+
+        <hr>
+
+        <h1>Langauge Details</h1>
+<!-- Rowspan:- The rowspan attribute makes a cell span multiple rows. -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td rowspan="3">Front-End</td>
+                    <td>HTML</td>
+                </tr>
+                <tr><td>CSS</td></tr>
+                <tr><td>JS</td></tr>
+
+                <tr >
+                    <td rowspan="4">Back-END</td>
+                    <td>React.js</td>
+                </tr>
+                <tr><td>Node.js</td></tr>
+                <tr><td>Express.js</td></tr>
+                <tr><td>MongoDB</td></tr>
+            </tbody>
+        </table>
+
+
+
+        <hr>
+
+        <h1>Langauge Details</h1>
+<!-- Rowspan:- The rowspan attribute makes a cell span multiple rows. -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="3">Fron-End</th>
+                    <th colspan="4">Back-End</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JS</td>
+                
+
+                
+                    <td>React.js</td>
+                    <td>Node.js</td>
+                    <td>Express.js</td>
+                    <td>MongoDB</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
