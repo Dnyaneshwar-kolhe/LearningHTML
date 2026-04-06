@@ -4,6 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Types</title>
+
+    <style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Box */
+form {
+    background: #ffffff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 4px;
+    display: block;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: 0.2s ease;
+}
+
+/* Focus */
+input:focus {
+    border-color: #6c63ff;
+    background: #fff;
+    outline: none;
+}
+
+/* Checkbox & Radio inline */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+/* Group styling */
+.group {
+    margin-bottom: 16px;
+}
+
+/* Range */
+input[type="range"] {
+    padding: 0;
+}
+
+/* File input */
+input[type="file"] {
+    background: none;
+    border: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #6c63ff;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #574fd6;
+}
+
+    </style>
 </head>
 <body>
     <form action="">
@@ -12,7 +98,53 @@
         <label for="">Email</label>
         <input type="email"><br><br>
         <label for="">Password</label>
-        <input type="password" name="" id="">
+        <input type="password" name="" id=""><br><br>
+
+        <label >DOB</label>
+        <input type="date" name="" id=""><br><br>
+        <label for="">Month</label>
+        <input type="month"><br><br>
+    
+    
+        <label for="">Select City</label>
+        <input type="checkbox" checked id="">Thiruvarur 
+        <input type="checkbox" name="" id="">Palakkad
+        <input type="checkbox" name="" id="">Madurai
+        <input type="checkbox" name="" id="">Secunderabad <br><br>
+
+        <label for="Gender"></label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other <br><br>
+
+        <label for="">Select Range</label>
+        <input type="range"><br><br>
+
+        <label for="">Upload Cv</label>
+        <input type="file"> <br><br>
+
+        <label for="">Photos</label>
+        <input type="file" multiple><br><br>
+
+        <label for="">Fav Car</label>
+        <select name="" id="">
+            <option value="">Choose</option>
+            <option value="">Honda City Type R</option>
+            <option value="">Porche 1972</option>
+            <option value="">Lancer</option>
+            <option value="">Nissan Patrol</option>
+
+        </select> <br><br>
+
+        <!-- Textarea use in subject,address -->
+         <label for="">Enter Address</label>
+        <textarea rows="5" cols="30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex rerum voluptatum placeat qui laborum delectus deleniti nobis incidunt est.</textarea>
+         <br><br>
+
+         <label for="">Submit</label>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Reset" id="">
+
     </form>
 </body>
 </html>
