@@ -1,0 +1,405 @@
+
+.heading{
+    text-align: center;
+    background-color:lightblue;
+    text-decoration: underline;
+    
+}
+.para{
+  color: #2c3e50;            
+  background-color: #ecf0f1; 
+  padding: 15px;   
+  text-align:justify;
+}
+.font_size{
+    font-size: 19px;
+}
+.font_family{
+    font-family: Georgia;
+}
+#chandrashila{
+    color: #0f172a; 
+    background-color: #f8fafc;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.t_align{
+    text-align: center;
+}
+.t_deco{
+    text-decoration:  underline  overline;
+}
+
+
+/* Text-indent-use for starting space */
+.t_indent{
+    text-indent: 45px; 
+}
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+
+.capi{
+    text-transform: capitalize;
+}
+
+.txt_space{
+    letter-spacing: 15px;
+}
+.txt_word{
+    word-spacing: 40px;
+}
+
+
+.p_line_height{
+    line-height: 24px;
+}
+
+.txt_shadow{
+    color:red;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.txt_shadow2{
+    color:blue;
+    text-shadow:0 0 3px #ff0000 ;
+    
+}
+
+.txt_shadow3{
+    color: black;
+    /* text-shadow: 10px 0px 4px blue; */
+    text-shadow:  0 -2px 4px rgb(24, 109, 146);
+}
+
+.Kashtbhanjan_shadow{
+    
+    /* box-shadow: 32px -2px 30px rgb(0, 0, 0); */
+
+    filter: drop-shadow(5px 20px 10px grey);
+}
+
+
+.hanuman_shadow{
+    filter: drop-shadow(5px 20px 10px orange);
+}
+
+
+.bal_ji_shadow{
+    filter: drop-shadow(5px 20px 10px rgb(61, 196, 209));
+}
+.border{
+    /* border: 14px solid orange;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px; */
+    /* border-radius: 52px 0 0 0; */
+}
+
+.b_mod{
+    text-align: justify;
+    border: 4px solid black;
+    padding: 30px;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px; */
+    margin: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+
+.p2_box{
+    text-align: justify;
+    border:4px dashed white;
+    padding: 30px;
+    margin: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.bal_box_model{
+    border: 5px solid rgb(0, 208, 255);
+    padding: 20px;
+    margin: 40px;
+}
+
+
+.f_famliy1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.f_famliy2{
+    font-family: monospace;
+}
+
+.f_famliy3{
+    font-family: fantasy;
+}
+
+.f_famliy4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:900;
+    line-height: 1.5;
+}
+
+
+
+.bg_pop{
+    text-align:center;
+    font-size: 100px;
+    height: 300px;
+    background: radial-gradient(#FFFFFF, orange, #2980B9);
+}
+
+
+
+/* body{
+    background-image: url(/Img/HondaTypeR.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0f172a;
+} */
+/* h1{
+    color: rgb(255, 255, 255);
+    font-size: 9rem;
+    font-family: monospace;
+    padding: 20px;
+    text-align: center;
+} */
+
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+    font-size: 22px;
+    font-family: monospace;
+  }
+
+#two{
+    background-color: #0f172a;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+#three{
+    background-color: cadetblue;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+#four{
+    background-color: deepskyblue;
+    position: sticky;
+    top: 0;
+
+}
+
+h1{
+    font-size: 9rem;
+}
+
+
+#five{
+    background-color:rgb(22, 206, 206);
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+}
+
+p{
+    text-align: justify;
+}
+
+.flex_item{
+    /* display: inline-block; */
+    width: 200px;
+    height: 150px;
+    background-color: rgb(118, 180, 195);
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+    font-family: monospace;
+}
+
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+h1{
+    text-align: center;
+
+}
+.item{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(118, 180, 195);
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+    font-family: monospace;
+}
+div.item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+  }
+
+.item:hover {
+    border: 2px solid white;
+    background-color: #000;
+    cursor: pointer;
+  }
+.img_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1:hover{
+    color: red;
+    background-color:cornflowerblue;
+    text-shadow: 9px 3px 4px black;
+    cursor: pointer;
+}
+
+input:focus{
+border-width: 1px;
+border-style: solid;
+border-color: rgb(133, 76, 230);
+}
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: purple;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+::selection{
+    background-color: blue;
+    color: white;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+
+.box{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(118, 180, 195);
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 3s linear 500ms;
+
+}
+.box1:hover{
+transform: translate(111px , 130px);
+}
+
+.box2:hover{
+    transform:translateX(40px) ;
+}
+.box3:hover{
+    transform: translateY(50px);
+}
+
+.box4:hover{
+    transform: rotate(360deg);
+}
+.box5:hover{
+    transform: skew(50deg,10deg);
+}
+.box6:hover{
+    transform: scale(1.5);
+}
+
+.wrapper{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.InIMG{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    object-fit: cover;
+}
+
+.InIMG:hover{
+    transform: scale(1.2);
+}
+
+
+ul{
+    list-style-type: none;
+    width: 150px;
+    padding: 20px;
+    font-weight: 900;
+}
+
+li{
+    padding: 15px;
+    border: 4px solid cornflowerblue;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+li:nth-child(2n+1) {
+    background-color: cornflowerblue;
+    border-bottom-color: black;
+}
+
+li:nth-child(2n+2){
+    color: #000;
+    background-color:lightcyan;
+    border-bottom-color: black;
+}
+
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+}

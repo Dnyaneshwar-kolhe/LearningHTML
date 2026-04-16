@@ -1,208 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Swadanna Premium</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-   <style>
-    body {
-  margin: 0;
-  font-family: sans-serif;
-  overflow-x: hidden;
-}
-
-/* VIDEO BACKGROUND */
-.bg-video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-/* SLIDES */
-.slider {
-  height: 100%;
-  position: relative;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transform: scale(1.2);
-  transition: 1s ease;
-}
-
-.slide.active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* TEXT */
-.content {
-  position: absolute;
-  bottom: 20%;
-  left: 10%;
-  color: white;
-}
-
-.content h1 {
-  font-size: 60px;
-}
-
-/* PRODUCTS */
-.products {
-  padding: 50px;
-  text-align: center;
-}
-
-.product {
-  margin: 20px;
-  padding: 20px;
-  background: #2e4d2c;
-  color: white;
-  display: inline-block;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.product:hover {
-  transform: scale(1.1);
-}
-
-/* CART */
-.cart {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: black;
-  color: white;
-  padding: 10px;
-  border-radius: 20px;
-}
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustNest Market - Your Organic Vitality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#1a3c2c', // Matches the deep green
+                        tanAccent: '#e3d9c6', // Matches the light cream
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+<body class="bg-[#FDFCF0] font-sans antialiased">
 
-<body>
+    <header class="bg-[#e6e6e6] border-b border-gray-300 px-3 py-1.5 flex items-center justify-between text-xs text-gray-700">
+        <div class="flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 bg-red-500 rounded-full"></span>
+            <span class="w-2.5 h-2.5 bg-yellow-400 rounded-full"></span>
+            <span class="w-2.5 h-2.5 bg-green-500 rounded-full"></span>
+        </div>
+        <div class="bg-white px-10 py-1 rounded-md border border-gray-200">localhost</div>
+        <div class="flex gap-2.5">
+            <span>[Hello]</span>
+            <span>[css-final]</span>
+            <span class="text-black font-semibold">Transform Your Vitality - TrustNest...</span>
+        </div>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
+    <nav class="bg-white px-12 py-4 flex items-center justify-between shadow-sm relative z-50">
+        <div class="text-2xl font-bold text-brandGreen">TrustNest Market</div>
+        
+        <div class="w-[450px]">
+            <input type="search" placeholder="Search premium products..." class="w-full px-5 py-2.5 bg-[#f5f5f5] rounded-full text-sm border border-gray-100 focus:ring-1 focus:ring-green-300 focus:outline-none">
+        </div>
 
-  <!-- VIDEO BACKGROUND -->
-  <video autoplay muted loop class="bg-video">
-    <source src="video.mp4" type="video/mp4">
-  </video>
+        <div class="flex items-center gap-7 text-gray-800 font-medium text-sm">
+            <a href="#" class="hover:text-green-700">Home</a>
+            <a href="#" class="hover:text-green-700">Shop</a>
+            <a href="#" class="hover:text-green-700">Deals</a>
+            <div class="relative">
+                <a href="#" class="hover:text-green-700">Cart</a>
+                <span class="absolute -top-3 -right-3.5 bg-green-600 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- SLIDER -->
-  <div class="slider">
+    <div class="relative px-12 py-24 flex items-center overflow-hidden bg-brandGreen text-white">
+        
+        <img src="https://trustnest-market.fra1.digitaloceanspaces.com/botanical-overlay-left.png" class="absolute left-[-100px] top-[-50px] opacity-15 pointer-events-none scale-110">
 
-    <div class="slide active">
-      <img src="https://images.unsplash.com/photo-1585238342028-4c9f7c5f6b7f">
-      <div class="content">
-        <h1>Swadanna</h1>
-        <p>The Soul of Snacking</p>
-      </div>
+        <img src="https://trustnest-market.fra1.digitaloceanspaces.com/botanical-overlay-right.png" class="absolute right-[-120px] bottom-[-100px] opacity-15 pointer-events-none scale-110">
+
+        <div class="max-w-xl relative z-10 flex flex-col gap-8">
+            
+            <div class="inline-flex items-center bg-[#F1E9D6] px-5 py-2 rounded-full border border-[#D5C9A9] shadow text-sm font-medium text-green-800">
+                ✔️ Trusted by 15,000+ Happy Seekers
+            </div>
+
+            <h1 class="text-[72px] font-serif font-light leading-[1.15] text-white">
+                Transform Your Vitality
+            </h1>
+
+            <p class="text-gray-200 text-lg leading-relaxed max-w-md font-light">
+                Curated Organic Treasures for a Vibrant Life
+            </p>
+
+            <div class="flex gap-6 mt-3">
+                <button class="bg-[#E4C569] text-green-900 font-bold px-10 py-3.5 rounded-xl shadow-[0_10px_20px_rgba(228,197,105,0.3)] hover:scale-105 transition duration-300">
+                    Shop Now
+                </button>
+                <button class="bg-white/10 backdrop-blur-sm px-10 py-3.5 rounded-xl border border-white/20 text-white font-medium hover:bg-white/20 transition">
+                    Explore Products
+                </button>
+            </div>
+
+            <div class="flex gap-12 mt-12 text-gray-200">
+                <div>
+                    <p class="text-3xl font-bold text-white">15K+</p>
+                    <p class="text-sm font-light uppercase tracking-wide">Seekers</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-white">650+</p>
+                    <p class="text-sm font-light uppercase tracking-wide">Curations</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-white">4.9★</p>
+                    <p class="text-sm font-light uppercase tracking-wide">Ratings</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center">
+            
+            <div class="relative bg-white/5 backdrop-blur-xl p-5 rounded-[50px] shadow-2xl border border-white/10">
+                <img src="https://trustnest-market.fra1.digitaloceanspaces.com/hero-composition-main.png" 
+                     alt="Organic Health Composition" 
+                     class="w-[600px] h-[700px] object-cover rounded-[40px] shadow-lg">
+            </div>
+
+            <div class="absolute -bottom-8 right-[-60px] w-36 h-36 bg-[#682a17] rounded-full flex items-center justify-center p-2 border-4 border-[#864019] shadow-2xl rotate-12">
+               <div class="border border-yellow-200/50 w-full h-full rounded-full flex flex-col items-center justify-center text-xs font-semibold text-yellow-100 uppercase tracking-tighter text-center leading-tight">
+                 Highest-Rated <br /> Bestseller
+               </div>
+            </div>
+
+            <div class="absolute bottom-12 left-[-60px] bg-white p-4 rounded-3xl shadow-2xl flex items-center gap-4 border border-gray-100">
+                <div class="w-16 h-16 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center">
+                   <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03" className="w-12 h-12 object-cover">
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-500">Aloe Vera Gel</p>
+                  <p class="text-gray-950 text-2xl font-extrabold">₹749</p>
+                  <button class="text-xs bg-green-600 text-white px-3 py-1.5 rounded-lg mt-1.5 hover:bg-green-700">Add to Cart</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="slide">
-      <img src="https://images.unsplash.com/photo-1604908554164-6c7d7b9f3b6b">
-      <div class="content">
-        <h1>Masala Magic</h1>
-        <p>Crunchy & Spicy</p>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- PRODUCTS -->
-<section class="products">
-
-  <div class="product" onclick="addToCart('250g',90)">
-    250g - ₹90
-  </div>
-
-  <div class="product" onclick="addToCart('500g',180)">
-    500g - ₹180
-  </div>
-
-  <div class="product" onclick="addToCart('1kg',320)">
-    1kg - ₹320
-  </div>
-
-</section>
-
-<!-- CART -->
-<div class="cart">
-  🛒 <span id="cart-count">0</span>
-</div>
-
-<!-- <script src="script.js"></script> -->
- <script>
-    let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-/* AUTO SLIDE */
-setInterval(() => {
-  changeSlide(1);
-}, 3000);
-
-function changeSlide(direction) {
-  slides[index].classList.remove("active");
-  index = (index + direction + slides.length) % slides.length;
-  slides[index].classList.add("active");
-}
-
-/* SWIPE SUPPORT */
-let startX = 0;
-
-document.addEventListener("touchstart", e => {
-  startX = e.touches[0].clientX;
-});
-
-document.addEventListener("touchend", e => {
-  let endX = e.changedTouches[0].clientX;
-
-  if (startX - endX > 50) {
-    changeSlide(1);
-  } else if (endX - startX > 50) {
-    changeSlide(-1);
-  }
-});
-
-/* PARALLAX */
-document.addEventListener("mousemove", e => {
-  let x = (window.innerWidth / 2 - e.clientX) / 30;
-  let y = (window.innerHeight / 2 - e.clientY) / 30;
-
-  slides[index].style.transform = `scale(1.05) translate(${x}px, ${y}px)`;
-});
-
-/* CART SYSTEM */
-let cartCount = 0;
-
-function addToCart(name, price) {
-  cartCount++;
-  document.getElementById("cart-count").innerText = cartCount;
-
-  alert(name + " added to cart!");
-}
- </script>
 </body>
 </html>
